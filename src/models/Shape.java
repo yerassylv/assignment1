@@ -2,7 +2,7 @@ package models;
 import java.util.ArrayList;
 import java.util.List;
 public class Shape {
-    List<Point> points = new ArrayList<>();
+    private List<Point> points = new ArrayList<>();
     public void addPoint(Point newPoint) {
         points.add(newPoint);
     }
