@@ -3,7 +3,7 @@ import models.Shape;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner:
+import java.util.Scanner;
 
 public class MyApplication {
     public static void main(String[] args) throws FileNotFoundException {
@@ -20,7 +20,7 @@ public class MyApplication {
             shape.addPoint(point);
         }
 
-        System.out.println(shape.getPerimeter());
+        System.out.println(shape.calculatePerimeter());
         System.out.println(shape.getLongest());
     }
 }
