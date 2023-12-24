@@ -19,11 +19,11 @@ public class Shape {
         return calculatePerimeter()/ count;
     }
     public double getLongestSide() {
-        double max = 0;
+        double longestside= 0;
         int size = points.size();
         for (int i = 0; i < size; i++)
-            max = Math.max(points.get(i).getDistanceTo(points.get((i + 1) % size)), max);
-        return max;
+            longestside = Math.max(points.get(i).getDistanceTo(points.get((i + 1) % size)), longestside);
+        return longestside;
     }
 
 }
