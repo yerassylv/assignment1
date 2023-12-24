@@ -6,17 +6,17 @@ public class Shape {
     public void addPoint(Point newPoint) {
         points.add(newPoint);
     }
-    public double getPerimeter() {
+    public double calculatePerimeter() {
         int count = points.size();
         double perimeter = 0;
         for (int i = 0; i < count; i++)
             perimeter += points.get(i).getDistanceTo(points.get((i + 1) % count));
         return perimeter; }
-    public double getAverage() {
+    public double getAverageSide() {
         int count = points.size();
         if (count <= 1) return 0;
-        if (count == 2) return getPerimeter();
-        return getPerimeter() / count;
+        if (count == 2) return calculatePerimeter();
+        return calculatePerimeter()/ count;
     }
     public double getLongest() {
         double mx = 0;

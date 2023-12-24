@@ -1,9 +1,8 @@
 package models;
 
 public class Point{
-    private final double x;
-
-    private final double y;
+    private double x;
+    private double y;
 
 
     public Point(double x, double y) {
