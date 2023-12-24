@@ -18,7 +18,7 @@ public class Shape {
         if (count == 2) return calculatePerimeter();
         return calculatePerimeter()/ count;
     }
-    public double getLongest() {
+    public double getLongestSide() {
         double max = 0;
         int size = points.size();
         for (int i = 0; i < size; i++)
